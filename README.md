@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @nclaira
+- 👋 Hi, I’m @claireniyigena
 - 👀 I’m interested in javascript project
 - 🌱 I’m currently learning on nodejs
 - 💞️ I’m looking to collaborate on ...
