@@ -1,0 +1,525 @@
+body {
+  font-family: 'Verdana', sans-serif;
+  margin: 0;  
+    
+}
+
+
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: -20px 2px;
+    border-bottom: 2px solid #83C73B;
+    /*position: fixed;
+    z-index: 1;*/
+}
+
+.logo img {
+    height: 77px;
+}
+
+.nav-links {
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 26px 50px;
+    display: flex;
+    align-items: center;
+    
+}
+.nav-links,.logo{
+    margin: 0px 90px;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+
+.nav-links li .a{
+    text-decoration: none;
+    color: #2A2A4D;
+    padding: 8px 19px;
+    }
+
+
+.nav-links li .a:hover { 
+    border-top: 1px solid #83C73B;
+    border-bottom: 1px solid #83C73B;
+    width: 0px;
+    animation-name: increase_width;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;    /* Retain the final state after animation.it helps to stay after animation, not to animatate and disappear */
+   }
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2A2A4D;
+    min-width: 148.5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #002C75;
+    color: #83C73B;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/*sliding style*/
+
+/* Make carousel images full width */
+.carousel-item img {
+  width: 100%;
+  height: 500px;
+}
+
+/* Move the carousel controls to the edges */
+.carousel-control-prev, .carousel-control-next {
+  width: 5%; /* Make the clickable area larger */
+}
+
+.carousel-control-prev {
+  left: 0; /* Far left */
+}
+
+.carousel-control-next {
+  right: 0; /* Far right */
+}
+
+/* Custom styles for the carousel indicators */
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  margin-right: 20px;
+  background-color: #002C75;
+}
+
+.carousel-indicators .active {
+  background-color: #83C73B;
+}
+
+/* Full-width carousel container */
+.carousel {
+  width: 100%;
+  max-width: 100vw;
+}
+
+
+
+
+ /*TRANSFORMING IDEAS PART*/
+
+
+#trans_container{
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.wethink_trans{
+    padding: 20px 20px;
+    
+}
+
+.wethink_trans h1{
+    color: #83C73B;
+}
+.wethink_trans h5{
+    color: #2A2A4D;
+}
+
+ .we_merge {
+    float: right;
+    padding: 2px 2px;
+
+ }
+
+ .we_merge p{
+    color: #2A2A4D;
+ }
+ 
+ .we_merge button{
+    background-color: #83C73B;
+    border-style: none;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 15px;
+ }
+
+
+
+
+ /*image space*/
+
+
+ .img_bkg{
+  background-image: linear-gradient(#ffffff, #2A2A4D);
+ }
+
+ #imges_container{
+    display: flex;
+    padding: 200px 0px 50px  0px;
+    margin-left: 100px;
+    margin-right: 20px;
+ }
+
+ #imges_container img{
+    height: 250px;
+    padding: 10px;
+ }
+
+ #imges_container .float_left_img{
+    float: right;
+ }
+
+ #imges_container .large_img{
+    flex-grow: 1;
+    height: 500px;
+    width: 500px;
+
+ }
+
+
+
+
+ 
+/*about company part*/
+
+#about_container{
+  display: flex;
+  flex-direction: row;
+  margin: 50px 70px;
+  
+}
+
+#about_container > div{
+  margin: 0px 70px;
+
+}
+
+
+.left_container{
+  line-height: 30px;
+
+}
+
+.right_contents img{
+  width: 400px;
+  height: 300px;
+}
+
+
+
+.left_contents h3{
+  line-height: 70px;
+  color: #83C73B;
+  position: relative;
+  display: inline-block; /* Makes the line as wide as the heading */
+  margin-bottom: 20px; /* Adjusts the space between the heading and the line */
+}
+.left_contents h3::after {
+  content: '';
+  position: absolute;
+  left: 50%; /* Center the line */
+  transform: translateX(-50%); /* Adjust the centering */
+  bottom: -2px; /* Adjusts the space between the heading and the line */
+  width: 50%; /* Set the width of the line (adjust as needed) */
+  height: 2px; /* Set the thickness of the line */
+  background-color: #000; /* Set the color of the line */
+}
+
+/*all button, it was for left contents*/
+
+button{
+  background-color: #2A2A4D;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+
+/*all button a,it was for left contents button a*/
+button a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/*OUR SERVICES PART*/
+
+#about_head { 
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align heading and line */
+  margin-left: 137px;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 20px;
+} 
+
+#about_head .line {
+  background-color: #2A2A4D;
+  width: 700px;
+  height: 30px; /* Adjust the height to make it look like a line */
+  margin-left: 20px; /* Add some space between the heading and the line */
+}
+
+
+
+.service_contain_bkg{
+  background-image: linear-gradient(white,rgb(0, 44, 117,0.25),rgb(0, 44, 117,0.7),rgb(0, 44, 117,0.44),rgb(0, 44, 117,0.9));
+  padding: 10px;
+
+}
+.service_contain_bkg h1{
+  margin-left: 150px;
+  
+
+}
+
+.image-container{
+  display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 40px; /* Reduced gap */
+    width: 82%; /* Adjust the width of the image container */
+    margin: 0 auto; /* Center the image container */
+    padding: 20px;
+    margin: 0px 110px;
+   
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.image_content_bkg {
+  background-color: #2A2A4D;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.image-box img {
+    width: 448px;
+    height: 250px;
+  
+}
+
+.image_content_bkg p{
+    width: 446px;
+    padding: 5px;
+    margin: 0;
+    color: #fff;
+
+}
+
+
+
+
+
+  /* OUR TEAM */
+
+  #team_container{
+    background-color: #002C75;
+    padding: 17px;
+  }
+  .team_contents{
+    margin: 50px 140px;
+    color: #83C73B;
+  }
+
+  .team_contents h1{
+    padding: 30px;
+    font-size: 60px;
+    padding: 50px 20px;
+  }
+
+  .team_contents h1 span{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+
+  }
+
+  .team_img-container{
+    margin-left: 30px;
+  }
+  
+
+
+
+/* Overlay that slides up */
+
+.img_with_contents {
+    position: relative; /* This makes the overlay positioned relative to this container */
+    display: inline-block; /* Ensure proper positioning */
+ 
+}
+
+.img_with_contents img {
+    display: block; /* Ensure the image behaves like a block element */
+    width: 100%; /* Adjust this if necessary */
+    height: auto; /* Keep image's aspect ratio */
+}
+
+
+
+.overlay_contents{
+    position: absolute;
+    bottom: 0; /* Overlay starts at the bottom */
+    left: 0;
+    background-color: rgba(131, 199, 59, 0.5); /* Blue background with transparency */
+    color: #fff;
+    width: 100%; /* Full width overlay */
+    height: 0%; /* Initially, height is 0 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Ensure it's above the image */
+    overflow: hidden; /* Hide overflowing content */
+    transition: height 0.5s ease, opacity 0.5s ease; /* Smooth height and opacity transition */
+    opacity: 0; /* Initially hidden */
+}
+
+.img_with_contents:hover .overlay_contents {
+    height: 40%; /* Expand the height to full on hover */
+    opacity: 1; /* Fade in */
+}
+
+
+.our_coll_b{
+    margin-left: 30px;
+    padding: 30px 0;
+}
+
+.our_coll_b p{
+    font-size: 30px;
+}
+  .explore_thewide{
+    margin: 50px 149px;
+  }
+  .explore_thewide p{
+    font-size: 30px;
+  }
+
+
+
+
+
+/*FOOTER PART*/
+
+#footer_contents{
+  display: flex;
+  background-color: #2A2A4D;
+  padding: 60px 10px;
+  color: white;
+}
+
+#footer_contents > div{
+  /*margin: 0px 90px;*/
+  width: 700px;
+
+}
+
+
+#footer_contents .first_column{
+margin-left: 150px;
+width: 3000px;
+
+}
+
+.first_column a,.third_column a{
+display: block;
+line-height: 32px;
+color: #fff;
+text-decoration: none;
+}
+
+.first_column a:hover, .third_column a:hover {
+  color: #20208B; 
+  text-decoration: none; 
+}
+
+#footer_contents .second_column{
+width: 1500px;
+margin-left: -600px;
+
+}
+
+
+/* Social Icons Styling */
+.social_icons {
+  margin-top: 20px;
+}
+
+.social_icons a {
+  color: #2A2A4D;
+  font-size: 24px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+
+.social_icons i {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+}
+
+.social_icons i:hover {
+  background-color: #20208B;
+  color: #fff;
+}
+
+
+#footer_contents .third_column{
+margin-left: 20px;
+}
+
+#footer_contents .third_column a{
+  display: block;
+  }
+#footer_contents h1,h3{
+color: #83C73B;
+}
+
+
+
+
